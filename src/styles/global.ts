@@ -19,7 +19,7 @@ html, body {
   body {
     background: #edf2f4;
     display: flex;
-    font-family: "Now";
+    font-family: "Inter";
     height: 100vh;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
