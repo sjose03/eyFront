@@ -20,7 +20,6 @@ export const Line = styled.div `
 export const Input = styled.input `
   border: solid 1px ;
   border-color: rgba(255,255,255,0.25);
-  color: rgb(255,255,255);
   width: 80%;
   height: 10%;
   margin-top:10px;
@@ -61,7 +60,7 @@ export const Blocks = styled.div `
     small {
       font-family: 'Inter', sans-serif;
       :nth-child(1) {
-        margin-right: 60%;
+        margin-right: 53%;
         color: rgb(255,255,255,0.5);
         margin-bottom: 0;
   };
