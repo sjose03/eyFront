@@ -1,28 +1,28 @@
 import React from 'react';
-import Logo1 from '../../assets/ey-login_1.png'
-import Logo2 from '../../assets/logo-ey-branco2.png'
-import BannerImg from '../../assets/login_banner.png'
+import LogoEyBranco from '../../assets/ey-logo-branco-header.png'
 
-import { Container,Line,Blocks,Input,Button,ButtonFalse,Banner } from './Header.styled';
+import { Container} from './Header.styled';
+import {
+  IoMdExit
+
+} from 'react-icons/io';
 
 const Header: React.FC = () => {
   return <Container>
-    <Blocks>
-      <img src={Logo1} alt="imagem logo 1" />
-      <img src={Logo2} alt="imagem logo 2" />
-      <form action="get">
-        <small>Faça seu login</small>
-        <Input type="text" placeholder='Email' name="username" id="username" />
-        <Input type="password" placeholder='Senha' name="password" id="password" />
-        <Button>Entrar</Button>
-        <ButtonFalse>Primeiro Acesso</ButtonFalse>
-        <small>Esqueceu sua senha?</small>
-      </form>
-    </Blocks>
-    <Line></Line>
-    <Blocks>
-      <Banner src={BannerImg} alt="banner"/>
-    </Blocks>
+    <img src={LogoEyBranco} alt="logo branco da ey" />
+
+    <button type="button">
+      <span>Sair</span>
+        <IoMdExit
+          style={{
+            transform: 'rotateY(180deg) ',
+            animation: 'transform 0.3s ease-in-out',
+            marginLeft: 10,
+          }}
+          color={'#FFF'}
+          size={20}
+        />
+      </button>
   </Container>;
 }
 
