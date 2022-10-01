@@ -3,9 +3,10 @@ import Logo1 from '../../assets/ey-login_1.png'
 import Logo2 from '../../assets/logo-ey-branco2.png'
 import BannerImg from '../../assets/login_banner.png'
 
+
 import { Container,Line,Blocks,Input,Button,Banner } from './FirstAccess.styled';
 
-const Home: React.FC = () => {
+const FirstAccess: React.FC = () => {
   return <Container>
     <Blocks>
       <img src={Logo1} alt="imagem logo 1" />
@@ -24,4 +25,4 @@ const Home: React.FC = () => {
   </Container>;
 }
 
-export default Home;
+export default FirstAccess;
