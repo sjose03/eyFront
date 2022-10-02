@@ -139,7 +139,7 @@ export const Button = styled.button`
   width: 15%;
   height: 7%;
   margin-left: 78%;
-  margin-top: 8%;
+  margin-top: 20%;
   color: #676580;
   border: 0;
   font-size: 0.6em;
