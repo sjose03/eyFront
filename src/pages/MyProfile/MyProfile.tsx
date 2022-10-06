@@ -1,23 +1,28 @@
 import React from "react";
-import { Accordion, TextInput, Grid, Textarea } from "@mantine/core";
 import {
   Container,
+  PictureProfile,
   Content,
-  Button,
   Blocks,
   FirtsDiv,
   SecondDiv,
 } from "./MyProfile.styled";
 import { HeaderLogin } from "../../components/HeaderLogin";
-import { AiOutlinePlus } from "react-icons/ai";
 const MyProfile: React.FC = () => {
   return (
     <Container>
       <HeaderLogin></HeaderLogin>
       <Content>
         <FirtsDiv>
-          <Blocks>Foto da capa</Blocks>
-          <Blocks>Informacao de apresentacao do candidato</Blocks>
+          <Blocks>
+            <section>
+              <PictureProfile>
+                <p>Foto de Perfil</p>
+              </PictureProfile>
+            </section>
+
+            <div>Informacao de apresentacao do candidato</div>
+          </Blocks>
           <Blocks>
             Exibição da descrição que o canditado colocou no formulario
           </Blocks>
@@ -25,7 +30,15 @@ const MyProfile: React.FC = () => {
           <Blocks>Competencia do candidato</Blocks>
           <Blocks>Competencia do candidato</Blocks>
         </FirtsDiv>
-        <SecondDiv></SecondDiv>
+        <SecondDiv>
+          <section>
+            <p>listagem de vagas de acordo com o perfil do candidato</p>
+          </section>
+          <section>
+            <p>listagem de cursos relacionados as competencias</p>
+          </section>
+          <section></section>
+        </SecondDiv>
       </Content>
     </Container>
   );

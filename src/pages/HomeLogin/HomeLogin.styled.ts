@@ -16,15 +16,15 @@ export const Content = styled.div `
   display: flex;
   margin-top:2%;
   align-items: center;
-  justify-content: center;
-  flex-direction: row;
+  /* justify-content: center; */
+  flex-direction: column;
 `;
 
 export const PictureProfile = styled.div `
 
   border: solid 1px;
   border-radius:50%;
-  width: 20%;
+  width: 10%;
   height: 90%;
   display: flex;
   flex-direction: column;
@@ -33,76 +33,77 @@ export const PictureProfile = styled.div `
 
   p{
     font-size: 0.7em;
+    text-align: center
   }
 `;
 
 export const Blocks = styled.div `
-
-  background: #F9F9F9;
+  width:97%;
+  height: 10%;
   border-radius: 8px;
-  height:30vh;
-  margin-top:10px;
-  box-shadow: 0px 10px 7px -3px rgba(0,0,0,0.4);
+  margin-top:2%;
+  /* border: solid 1px; */
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
-  justify-content: center;
-
-  :nth-child(1){
-  /* background: black; */
-  height:30vh;
-  margin-top:0;
   justify-content: start;
-
-
-  section{
-    border: solid 1px;
-    background: #676580;
-    height: 50%;
-    width: 100%;
-    border-radius: 8px;
-  }
-  }
 `;
 
 export const FirtsDiv = styled.div `
-  width:70%;
-  height: 100%;
+  width:97%;
+  height: 23%;
   /* border: solid 1px red; */
-  margin-right: 2%;
+  border-radius: 8px;
+  background: #FEF17C;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  section {
+    width: 40%;
+    height: 80%;
+    border: solid 1px;
+    margin-left: 1%;
+  }
 `;
 
 export const SecondDiv = styled.div `
-  width: 25%;
-  height: 100%;
+  width:97%;
+  height: 60%;
   /* border: solid 1px blue; */
   display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 
   section{
-    margin-right:2%;
+    /* margin-right:2%; */
     background: #F9F9F9;
-    width: 80%;
-    height: 45%;
-    min-height: 450px;
-    margin-left: 20px;
-    margin-bottom: 2%;
-    /* border: solid 1px; */
+    width: 49%;
+    height: 100%;
+    border: solid 3px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-  box-shadow: 0px 10px 7px -3px rgba(0,0,0,0.4);
+  /* box-shadow: 0px 10px 7px -3px rgba(0,0,0,0.4); */
 
-  p{
-    font-size: 0.6pc;
-  }
 
-  :nth-child(3){
-    background: none;
-    min-height: 50px;
-    box-shadow:none;
+  article{
+    margin-left:1%;
+    margin-top: 3%;
+    /* border: solid 1px; */
+    width: 95%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    p{
+      text-align: center;
+      font-weight: bold;
+    }
   }
 
   }
@@ -112,15 +113,16 @@ export const SecondDiv = styled.div `
 
 export const Button = styled.button`
   background: #FEF17C;
-  margin-top: 12px;
+  /* margin-top: 12px; */
   border-radius: 3px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 5%;
-  height: 5%;
-  margin-left: 43%;
+  width: 20%;
+  height: 50%;
+  font-weight: bold;
+  /* margin-left: 43%; */
   color: #676580;
   border: 0;
   font-size: 0.6em;
@@ -133,20 +135,3 @@ export const Button = styled.button`
     cursor: not-allowed;
   }
 `;
-export const Upload = styled.section `
-    /* border: solid 1px; */
-    background: rgba(249,249,249,1);
-    width: 30%;
-    height: 70%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top:3%;
-    border-radius:5%;
-    box-shadow: 0px 7px 11px 0px rgba(0,0,0,0.2);
-`;
-export const Line = styled.div `
-  border: solid 1px rgba(103,101,128,0.45);
-  height: 90%;
-  width: 1px;
-  `;
