@@ -2,7 +2,8 @@ import React from "react";
 // import {Login} from "./pages/Login";
 // import {FirstAccess} from "./pages/FirstAccess";
 // import { MyProfile } from "./pages/MyProfile";
-import { HomeLogin } from "./pages/HomeLogin";
+// import { HomeLogin } from "./pages/HomeLogin";
+import { ApplicationList } from "./pages/ApplicationList";
 // import { UploadPicture } from "./pages/UploadPicture";
 // import {Home} from "./pages/Home"
 // import {FormReg} from "./pages/FormReg"
@@ -14,7 +15,7 @@ function App() {
     <>
       <MantineProvider withGlobalStyles withNormalizeCSS>
         {/* <Login></Login> */}
-        <HomeLogin></HomeLogin>
+        <ApplicationList></ApplicationList>
       </MantineProvider>
     </>
   );
