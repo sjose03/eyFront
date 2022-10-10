@@ -1,5 +1,5 @@
 import React from "react";
-import { Accordion, TextInput, Grid, Textarea } from "@mantine/core";
+import { Accordion, TextInput, Grid, Textarea, Select } from "@mantine/core";
 import { Container, Content, Button } from "./FormReg.styled";
 import { Header } from "../../components/Header";
 import { AiOutlinePlus } from "react-icons/ai";
@@ -47,14 +47,14 @@ const FormReg: React.FC = () => {
             <Accordion.Control>Experiencia Profissional</Accordion.Control>
             <Accordion.Panel>
               <Grid>
-                <Grid.Col span={6}>
-                  <TextInput label="Nome" variant="filled" />
-                  <TextInput label="Email" variant="filled" />
-                  <TextInput label="Cargo Desejado" variant="filled" />
+                <Grid.Col span={4}>
+                  <TextInput label="Empresa" variant="filled" />
                 </Grid.Col>
-                <Grid.Col span={6}>
-                  <TextInput label="Idade" variant="filled" />
-                  <TextInput label="Cargo Atual" variant="filled" />
+                <Grid.Col span={4}>
+                  <TextInput label="Cargo" variant="filled" />
+                </Grid.Col>
+                <Grid.Col span={4}>
+                  <Textarea label="Atividades" variant="filled" />
                 </Grid.Col>
               </Grid>
             </Accordion.Panel>
@@ -64,13 +64,26 @@ const FormReg: React.FC = () => {
             <Accordion.Panel>
               <Grid>
                 <Grid.Col span={6}>
-                  <TextInput label="Nome" variant="filled" />
-                  <TextInput label="Email" variant="filled" />
-                  <TextInput label="Cargo Desejado" variant="filled" />
+                  <TextInput label="Instituição" variant="filled" />
                 </Grid.Col>
                 <Grid.Col span={6}>
-                  <TextInput label="Idade" variant="filled" />
-                  <TextInput label="Cargo Atual" variant="filled" />
+                  <Select
+                    clearable
+                    label="Escolaridade"
+                    placeholder="Escolha um"
+                    data={[
+                      {
+                        value: "Superior Completo",
+                        label: "Superior Completo",
+                      },
+                      {
+                        value: "Superior Incompleto",
+                        label: "Superior Incompleto",
+                      },
+                      { value: "Médio", label: "Médio" },
+                      { value: "Fundamental", label: "Fundamental" },
+                    ]}
+                  />
                 </Grid.Col>
               </Grid>
             </Accordion.Panel>
@@ -80,13 +93,28 @@ const FormReg: React.FC = () => {
             <Accordion.Panel>
               <Grid>
                 <Grid.Col span={6}>
-                  <TextInput label="Nome" variant="filled" />
-                  <TextInput label="Email" variant="filled" />
-                  <TextInput label="Cargo Desejado" variant="filled" />
+                  <TextInput label="Lingua" variant="filled" />
                 </Grid.Col>
                 <Grid.Col span={6}>
-                  <TextInput label="Idade" variant="filled" />
-                  <TextInput label="Cargo Atual" variant="filled" />
+                  <Select
+                    clearable
+                    label="Nivel"
+                    placeholder="Escolha um"
+                    data={[
+                      {
+                        value: "Fluente",
+                        label: "Fluente",
+                      },
+                      {
+                        value: "Intermediário",
+                        label: "Intermediário",
+                      },
+                      {
+                        value: "Iniciante",
+                        label: "Iniciante",
+                      },
+                    ]}
+                  />
                 </Grid.Col>
               </Grid>
             </Accordion.Panel>
@@ -108,7 +136,7 @@ const FormReg: React.FC = () => {
             </Accordion.Panel>
           </Accordion.Item>
         </Accordion>
-        <Button>Próximo</Button>
+        <Button to="/uploadPicture">Próximo</Button>
       </Content>
     </Container>
   );

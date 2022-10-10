@@ -3,9 +3,7 @@ import {
   Container,
   Content,
   FirtsDiv,
-  Blocks,
   SecondDiv,
-  Button,
 } from "./ApplicationList.styled";
 import { HeaderLogin } from "../../components/HeaderLogin";
 const ApplicationList: React.FC = () => {

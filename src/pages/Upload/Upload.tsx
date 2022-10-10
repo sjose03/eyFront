@@ -11,6 +11,7 @@ import {
   Upload,
   Line,
   Button,
+  ButtonFalse,
 } from "./Upload.styled";
 import { Header } from "../../components/Header";
 import BannerEYPreencher from "../../assets/banner-ey-preencher.png";
@@ -40,12 +41,12 @@ const UploadPage: React.FC = () => {
           <BoxUpload>
             <Upload>
               <FaWpforms style={{ marginTop: 30 }} size={60}></FaWpforms>
-              <Button>Ir para o Formulario</Button>
+              <Button to="/registerForm">Ir para o Formulario</Button>
             </Upload>
             <Line></Line>
             <Upload>
               <BsUpload style={{ marginTop: 30 }} size={60}></BsUpload>
-              <Button>Importar CV</Button>
+              <ButtonFalse>Importar CV</ButtonFalse>
             </Upload>
           </BoxUpload>
         </UploadSection>

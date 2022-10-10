@@ -33,7 +33,7 @@ const UploadPicture: React.FC = () => {
               </ButtonUpload>
             </div>
           </BoxUpload>
-          <Button>Proximo</Button>
+          <Button to="/myProfile">Proximo</Button>
         </UploadSection>
       </Content>
     </Container>

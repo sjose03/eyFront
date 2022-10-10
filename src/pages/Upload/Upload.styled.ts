@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -10,9 +11,11 @@ export const Container = styled.div`
   justify-content: space-between;
 `;
 export const Content = styled.div `
-  /* border: solid 1px; */
   width: 100vw;
   height: 85%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 `;
 
 export const WelcomeBanner = styled.div `
@@ -41,7 +44,6 @@ img {
 `;
 
 export const UploadSection = styled.section `
-    /* border: solid 1px; */
     background: rgba(249,249,249,1);
     width: 60vw;
     height: 60%;
@@ -53,7 +55,6 @@ export const UploadSection = styled.section `
     box-shadow: 0px 13px 6px -10px rgba(0,0,0,0.5);
 
     p {
-    /* border: solid 1px; */
     text-justify: auto;
     text-align: center;
     font-size: 0.6em;
@@ -67,7 +68,6 @@ export const UploadSection = styled.section `
 }
 `;
 export const BoxUpload = styled.section `
-    /* border: solid 1px; */
     background: rgba(249,249,249,1);
     width: 70%;
     height: 73%;
@@ -77,8 +77,35 @@ export const BoxUpload = styled.section `
     justify-content: space-around;
     margin-top:1%;
 `;
-export const Button = styled.button`
+
+export const ButtonFalse = styled.button`
+
   background: #FEF17C;
+  margin-top: 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+  height: 20%;
+  margin-left: 2px;
+  color: #676580;
+  border: 0;
+  font-size: 0.6em;
+  transition: filter 0.2s;
+  &:not(:disabled):hover {
+    filter: brightness(0.9);
+  }
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+`;
+
+export const Button = styled(Link)`
+  background: #FEF17C;
+  text-decoration: none;
   margin-top: 12px;
   border-radius: 3px;
   cursor: pointer;

@@ -30,25 +30,25 @@ const HomeLogin: React.FC = () => {
               <p>ID da Vaga</p>
               <p>Breve descrição</p>
               <p>Senioridade</p>
-              <Button>Quero me candidatar</Button>
+              <Button to="/wantApply">Quero me candidatar</Button>
             </article>
             <article>
               <p>ID da Vaga</p>
               <p>Breve descrição</p>
               <p>Senioridade</p>
-              <Button>Quero me candidatar</Button>
+              <Button to="/wantApply">Quero me candidatar</Button>
             </article>
             <article>
               <p>ID da Vaga</p>
               <p>Breve descrição</p>
               <p>Senioridade</p>
-              <Button>Quero me candidatar</Button>
+              <Button to="/wantApply">Quero me candidatar</Button>
             </article>
             <article>
               <p>ID da Vaga</p>
               <p>Breve descrição</p>
               <p>Senioridade</p>
-              <Button>Quero me candidatar</Button>
+              <Button to="/wantApply">Quero me candidatar</Button>
             </article>
           </section>
           <section>Extra Content</section>

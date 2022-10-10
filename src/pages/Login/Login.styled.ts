@@ -1,11 +1,11 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 
 export const Container = styled.div`
   border: solid 1px;
   width: 100vw;
   height: 100vh;
-  background: #222222;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -19,16 +19,16 @@ export const Line = styled.div `
   `;
 export const Input = styled.input `
   border: solid 1px ;
-  border-color: rgba(255,255,255,0.25);
-  color: rgb(255,255,255);
+  border-color: #FEF17C;
+  color: #676580;
   width: 80%;
   height: 10%;
   margin-top:10px;
   border-radius: 3px;
-  background: #222222;
+  /* background: #222222; */
 
   ::placeholder {
-    color: rgb(255,255,255,0.75);
+    color: #676580;
   }
 `;
 
@@ -108,8 +108,8 @@ export const Button = styled.button`
   }
 `;
 
-export const ButtonFalse = styled.button`
-  background: #222222;
+export const ButtonFalse = styled(Link)`
+  text-decoration:none;
   margin-top: 12px;
   border-radius: 3px;
   cursor: pointer;

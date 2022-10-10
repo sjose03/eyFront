@@ -1,1 +1,1 @@
-export { default as FormReg} from './FormReg'
+export { default as FormReg } from "./FormReg";

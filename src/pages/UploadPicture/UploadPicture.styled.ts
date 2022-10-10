@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -21,19 +22,20 @@ export const Content = styled.div `
 export const WelcomeBanner = styled.div `
   /* border: solid 1px; */
   width: 17vw;
-  height: 15%;
+  height: 20%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top:3%;
+  margin-top:1%;
   justify-content: space-between;
 
 p {
+  /* border: solid 1px; */
   text-justify: auto;
   text-align: center;
   font-size: 0.8em;
   width: 80%;
-  height: 40%;
+  height: 20%;
 }
 
 img {
@@ -47,13 +49,13 @@ export const UploadSection = styled.section `
     /* border: solid 1px; */
     background: rgba(249,249,249,1);
     width: 40vw;
-    height: 60%;
+    height: 50%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin-top:3%;
-    margin-bottom:3%;
+    margin-top:1%;
+    /* margin-bottom:3%; */
     box-shadow: 0px 13px 6px -10px rgba(0,0,0,0.5);
 
     p {
@@ -62,7 +64,7 @@ export const UploadSection = styled.section `
     text-align: center;
     font-size: 0.6em;
     width: 50%;
-    height: 13%;
+    height: 20%;
 
     :nth-child(2){
     width: 70%;
@@ -74,7 +76,7 @@ export const BoxUpload = styled.section `
     /* border: solid 1px; */
     background: rgba(249,249,249,1);
     width: 70%;
-    height: 53%;
+    height: 73%;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -84,8 +86,8 @@ export const BoxUpload = styled.section `
     div{
     border: dashed 1px;
     border-radius: 90px;
-    width: 30%;
-    height: 70%;
+    width: 40%;
+    height: 60%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -128,18 +130,19 @@ export const ButtonUpload = styled.button`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled(Link)`
+  text-decoration:none;
   background: #FEF17C;
-  margin-top: 12px;
   border-radius: 5px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 15%;
-  height: 7%;
+  height: 10%;
   margin-left: 78%;
-  margin-top: 20%;
+  margin-top: 10%;
+  margin-bottom:10px;
   color: #676580;
   border: 0;
   font-size: 0.6em;
@@ -161,7 +164,7 @@ export const Upload = styled.section `
     /* border: solid 1px; */
     background: rgba(249,249,249,1);
     width: 30%;
-    height: 70%;
+    height: 50%;
     display: flex;
     align-items: center;
     flex-direction: column;

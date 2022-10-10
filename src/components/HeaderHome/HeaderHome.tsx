@@ -1,18 +1,16 @@
 import React from "react";
 import LogoEyBranco from "../../assets/ey-logo-branco-header.png";
-import AuthContext from "../../contexts/authContext";
-import { Container } from "./Header.styled";
-import { IoMdExit } from "react-icons/io";
-import { useContext } from "react";
 
-const Header: React.FC = () => {
-  const { signOut } = useContext(AuthContext);
+import { Container } from "./HeaderHome.styled";
+import { IoMdPerson } from "react-icons/io";
+import { Link } from "react-router-dom";
 
+const HeaderHome: React.FC = () => {
   return (
     <Container>
       <img src={LogoEyBranco} alt="logo branco da ey" />
 
-      <button
+      <Link
         style={{
           textDecoration: "none",
           display: "flex",
@@ -21,10 +19,10 @@ const Header: React.FC = () => {
           color: "#FFF",
           marginRight: "5%",
         }}
-        onClick={signOut}
+        to="/login"
       >
-        <span>Sair</span>
-        <IoMdExit
+        <span>Login</span>
+        <IoMdPerson
           style={{
             transform: "rotateY(180deg) ",
             animation: "transform 0.3s ease-in-out",
@@ -33,9 +31,9 @@ const Header: React.FC = () => {
           color={"#FFF"}
           size={20}
         />
-      </button>
+      </Link>
     </Container>
   );
 };
 
-export default Header;
+export default HeaderHome;

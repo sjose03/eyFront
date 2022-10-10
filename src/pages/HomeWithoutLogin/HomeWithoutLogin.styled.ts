@@ -9,40 +9,44 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
+  overflow-x: hidden; 
+  overflow-y: hidden; 
 `;
 export const Content = styled.div `
   /* border: solid 1px; */
-  width: 98vw;
-  height: 85%;
+  width: 100vw;
+  height: 100%;
   display: flex;
-  margin-top:2%;
   align-items: center;
   /* justify-content: center; */
   flex-direction: column;
 `;
 
-export const PictureProfile = styled.div `
-
-  border: solid 1px;
-  border-radius:50%;
-  width: 10%;
-  height: 90%;
+export const DivTitle = styled.div`
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* border: solid 1px; */
+  width: 30%;
+  height: 45px;
 
   p{
-    font-size: 0.7em;
-    text-align: center
-  }
+      text-align: center;
+      margin:0;
+
+    :first-child{
+      font-weight: bold;
+      margin-bottom:1px;
+    }
+    }
 `;
 
 export const Blocks = styled.div `
   width:97%;
-  height: 10%;
+  height: 5%;
   border-radius: 8px;
-  margin-top:2%;
+  margin-top: 2%;
+  margin-bottom:1%;
   /* border: solid 1px; */
   display: flex;
   align-items: flex-start;
@@ -51,28 +55,27 @@ export const Blocks = styled.div `
 `;
 
 export const FirtsDiv = styled.div `
-  width:97%;
-  height: 23%;
+  width:100vw;
+  height: 33%;
   /* border: solid 1px red; */
   border-radius: 8px;
-  background: #FEF17C;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-evenly;
 
-  section {
-    width: 40%;
-    height: 80%;
-    border: solid 1px;
-    margin-left: 1%;
+  img {
+    width: 100%;
+    height: 100%;
   }
 `;
 
 export const SecondDiv = styled.div `
-  width:97%;
-  height: 60%;
+  width:97vw;
+  height: 40%;
   /* border: solid 1px blue; */
+  margin:0;
+  padding:0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -83,16 +86,25 @@ export const SecondDiv = styled.div `
     background: #F9F9F9;
     width: 49%;
     height: 100%;
-    border: solid 3px;
+    /* border: solid 1px; */
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
   /* box-shadow: 0px 10px 7px -3px rgba(0,0,0,0.4); */
+
+  :nth-child(2){
+    border: none
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 
 
   article{
-    margin-left:1%;
+    /* margin-left:1%; */
     margin-top: 3%;
     /* border: solid 1px; */
     width: 95%;
@@ -101,10 +113,6 @@ export const SecondDiv = styled.div `
     flex-direction: row;
     justify-content: space-between;
 
-    p{
-      text-align: center;
-      font-weight: bold;
-    }
   }
 
   }
@@ -122,7 +130,7 @@ export const Button = styled(Link)`
   align-items: center;
   justify-content: center;
   width: 20%;
-  height: 50%;
+  height: 90%;
   font-weight: bold;
   /* margin-left: 43%; */
   color: #676580;
