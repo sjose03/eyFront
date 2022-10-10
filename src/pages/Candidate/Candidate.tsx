@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Container,
-  Content,
-  FirtsDiv,
-  Blocks,
-  SecondDiv,
-  Button,
-} from "./Candidate.styled";
+import { Container, Content, FirtsDiv, SecondDiv } from "./Candidate.styled";
 import { HeaderLogin } from "../../components/HeaderLogin";
 const Candidate: React.FC = () => {
   return (
